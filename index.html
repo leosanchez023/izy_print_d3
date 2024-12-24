@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>izy print 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>izy print 3D</h1>
+  </header>
+
+  <section class="container">
+
+    <!-- Menu de Categorias -->
+    <nav class="Menu_categorias">
+      <div class="cabeçalho_categoria">
+        <h2>Categoria</h2>
+        <div class="botao_adicinar" onclick="">+</div>
+      </div>
+      <ul>
+        <!-- Categorias serão inseridas dinamicamente -->
+      </ul>
+    </nav>
+
+    <!-- Menu de Arquivos -->
+    <nav class="menu_arquivos">
+        <div class="cabeçalho_arquivos">
+          <button class="botao_adicinar" id="botao_add_arquivos"> Novo Arquivos</button>
+        </div>
+  
+        <!--formulario para ADD um arquivo-->
+        <dialog id="modal_arquivo">
+          <header class="header_modal_arquivo">
+            <h2>Novo Arquivo</h2>
+            <button class="botao_X" id="cancelar_modal">X</button>
+          </header>
+
+          <main class="inputs_formularios_arquivo">
+            <section class="difiniçao"> 
+              <p>Nome:</p>
+              <p>Dategoria:</p>
+              <p>Modelo:</p>
+              <p>Especificaçao:</p>
+            </section>
+            
+            <section class="inputs_arquivo">
+
+              <div>
+                <input class="input_medio" type="text">
+              </div>
+
+              <div>                
+                <input class="input_pequeno" type="text">
+                <button class="V">V</button>
+                <button class="V">+</button>
+              </div>
+
+              <div>               
+                <input class="input_pequeno" type="text">
+                <button class="V">V</button>
+                <button class="V">+</button>
+              </div>
+
+              <div>               
+                <input class="input_grande" type="text">
+              </div>
+
+            </section>
+          </main>
+
+          <footer class="header_modal_arquivo">
+            <button id="salvar_arquivo">Salvar</button>
+          </footer>
+
+        </dialog>
+    </nav>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
